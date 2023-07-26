@@ -1,0 +1,94 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+background-image:url(background1.jpg);
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.menubar
+{
+    background-color: green;
+    text-align: center;
+}
+.menubar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menubar ul li
+{
+width: 120px;
+margin: 15px;
+padding: 10px;
+}
+.menubar ul li a
+{
+text-decoration: none;
+color: white;
+}
+.active,.menubar ul li:hover
+{
+background: greenyellow;
+border-radius: 3px;
+}
+.menubar .fa
+{
+margin-right: 8px;
+}
+.submenu1
+{
+    display: none;
+}
+.menubar ul li:hover .submenu1
+{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menubar ul li:hover .submenu1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .submenu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menubar ul li:hover .submenu1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menubar ul li:hover .submenu1 ul li a:hover
+{
+    color: blue;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.submenu2
+{
+    display: none;
+
+}
+.hover-me:hover .submenu2
+{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background-color: green;
+}
